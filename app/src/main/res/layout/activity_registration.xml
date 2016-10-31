@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:gravity="center">
+
+    <EditText
+        android:inputType="textEmailAddress|phone"
+        android:id="@+id/id_regist_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit"
+        android:hint=" 邮箱/手机号" />
+
+    <EditText
+        android:id="@+id/id_regist_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/id_regist_email"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit"
+        android:hint="昵称" />
+
+    <EditText
+        android:inputType="numberPassword"
+        android:id="@+id/id_regist_pass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/id_regist_name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit"
+        android:hint="密码" />
+
+    <EditText
+        android:inputType="numberPassword"
+        android:id="@+id/id_regist_confim"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/id_regist_pass"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit"
+        android:hint="密码确认" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/ll"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_regist_confim"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/id_login_goLogin"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/loginbutton"
+            android:text="提交"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/id_login_registration"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/loginbutton"
+            android:text="重置"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
